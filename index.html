@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">-->
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#000008">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="부름 :: 실생활 모임 정보 플랫폼">
+  <meta property="og:description" content="국내 최대 예약 전문 플랫폼, 저렴한 가격으로 만나보세요!">
+  <meta property="og:image" content="http://naliya.net/img/logo.jpg">
+  <meta property="og:url" content="http://www.naliya.net">
+  <meta name="description" content="국내 최대 예약 전문 플랫폼, 알차게 할인된 가격으로 만나보세요!">
+  <meta name="keywords" content="나목, namok, 부름, bloom, 부름앱, 마이스코인">
+  <meta name="og:description" content="국내 최대 예약 전문 플랫폼, 알차게 할인된 가격으로 만나보세요!">
+  <meta name="og:keyword" content="나목, namok, 부름, bloom, 부름앱, 마이스코인">
+  <title>부름 :: 실생활 모임 정보 플랫폼</title>
+
+  <script>
+    function isMobile() {
+      var UserAgent = navigator.userAgent;
+      if (UserAgent.match(
+          /iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+        ) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    if (isMobile()) {
+      location.href = "/index_m.html"; //모바일페이지
+    } else {}
+  </script>
+  <!--css::S-->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .modal-backdrop {
+      position: inherit !important
+    }
+
+    .modal {
+      float: right;
+    }
+
+    .modal-540px {
+      max-width: 500px;
+      margin: 8rem auto
+    }
+
+    .color-white {
+      color: white;
+    }
+  </style>
+  <!--css::E-->
+
+</head>
+
+<!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary d-none modal_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-540px">
+          <div class="modal-content">
+            <!--
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+-->
+            <div class="modal-body p-0">
+              <img src="img/notice.svg" class="w-100">
+            </div>
+            <div class="modal-footer">
+              <!--
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+-->
+              <button type="button" class="btn-close color-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+<!--인트로 진입 로딩이미지::s--
+<div id="loading-wrapper2">
+  <div class="bg-white"></div>
+  <div class="bloom center text-dark wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">I'm Bloom
+  </div>
+  <div class="bloom center text-dark drama"></div>
+</div>
+<!--인트로 진입 로딩이미지::e-->
+
+<!--
+    <video muted="" playsinline="" loop="" autoplay="" width="3000px">
+      <source src="video/bloom.mp4" type="video/mp4" />
+    </video>
+-->
+
+<body class="">
+ 
+  <div class="circle"></div>
+
+  <!--main::s-->
+  <div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide main_bg1 align-items-start">
+        <!--스크롤 아이콘:s-->
+        <img src="img/scroll_1.svg" class="position-absolute top-100 start-50 translate-middle object-contain" style="width:30%;">
+        <div class="fixed-bottom nunito fw-bold text-bloom" style="margin-bottom: 25px">
+          Scroll
+          <div class="fixed-bottom moveup">
+            <img src="img/down_btn_bloom.svg" class="mx-auto" style="width:1%">
+          </div>
+        </div>
+        <!--스크롤 아이콘:e-->
+        <!--header_투명헤더::s-->
+        <div class="container-fluid px-0 header-container bg-transparent mt-72px" style="z-index:9;">
+          <div class="container-bloom mx-auto text-bloom">
+            <header class="d-flex flex-center py-3">
+              <div class="col-3">
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a href="/service.html" class="nav-link text-333333 nunito fs-24px ms-48px fw-black p-0"> Service
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/faq.html" class="nav-link text-333333 nunito fs-24px fw-black p-0"> FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <center>
+                  <img src="img/bloom.png" style="width: 132px">
+                </center>
+              </div>
+              <div class="col-3">
+                <ul class="nav nav-pills float-end">
+                  <li class="nav-item me-30px">
+                    <a href="https://www.instagram.com/office.bloom/" target="”_blank&quot;">
+                      <img src="img/insta.svg">
+                    </a>
+                  </li>
+                  <li class="nav-item me-30px">
+                    <a href="https://blog.naver.com/namokcompany" target="”_blank&quot;">
+                      <img src="img/blog.svg">
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a href="https://www.facebook.com/AllEvent.Bloom/" target="”_blank&quot;">
+                      <img src="img/facebook.svg">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </div>
+        <!--header_투명헤더::e-->
+        <img src="img/phone.svg" class="object-contain" style="width:15%; position: absolute; right: 377px; z-index:99; top: 120px">
+        <div class="container-fluid mt-244px">
+          <div class="container-fluid px-0 container-bloom mx-auto">
+            <div class="row">
+              <div class="col-12">
+                <p class="fs-54px lh-68px text-start text-bloom ssurround mb-0 wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+                  부름 회원이라면<br>
+                  누구나, 이유 없이<br>
+                  최대 혜택 제공<br>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="position-absolute" style="width:230px; right:407px; top: 430px">
+                <!--main>sub::s-->
+                <div class="swiper mySwiper1-2 ">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/phone7.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone8.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone9.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone10.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone4.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone5.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/phone6.jpg">
+                    </div>
+                  </div>
+                  <a class="btn bg-bloom text-white mt-4 ssurround" style="width: 206px; font-size: 20px" href="#">
+                    다운로드 받기
+                    <img src="img/right_btn.svg" class="moveright" style="width: 6%; display: inline">
+                  </a>
+                </div>
+                <!--main>sub::e-->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+
+              <!--main>sub::s-->
+              <div class="swiper mySwiper1-1 mt-139px">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle1.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle2.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle3.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle4.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle5.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle6.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle7.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle8.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle9.svg">
+                  </div>
+                  <div class="swiper-slide rounded-circle">
+                    <img src="img/circle10.svg">
+                  </div>
+                </div>
+              </div>
+              <!--main>sub::e-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <!--main>sub::s-->
+        <div class="swiper mySwiper5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white  align-items-start">
+              <!--스크롤 아이콘:s-->
+              <img src="img/scroll_2.svg" class="position-absolute top-100 start-50 translate-middle object-contain" style="width:30%;">
+              <div class="fixed-bottom nunito fw-bold text-yellow" style="margin-bottom: 25px">
+                Scroll
+                <div class="fixed-bottom moveup">
+                  <img src="img/down_btn_yellow.svg" class="mx-auto" style="width:1%">
+                </div>
+              </div>
+              <!--스크롤 아이콘:e-->
+              <center>
+                <div class="h-100 row fs-1" style="height: 1080px !important">
+                  <div class="g_wrapper_2">
+                    <!--그리드 시스템 래퍼(수직 3분할)-->
+                    <div class="g_center_area">
+                      <div class="container mt-72px">
+                        <div class="row gx-0">
+                          <div class="col-12" style="margin-bottom: 100px">
+                            <div class="text-333333 title ssurround fs-54px">내가 원하는 정보, 예약 및 할인 혜택 까지</div>
+                          </div>
+
+                          <div class="col-5">
+                            <div style="position: absolute; z-index: 2; left: 600px">
+                              <video class="float-end" muted="" playsinline="" loop="" autoplay="" width="215px">
+                                <source src="video/bloom.mp4" type="video/mp4" />
+                              </video>
+                            </div>
+                            <img src="img/awfd.svg" class="object-contain" style="width:16%; position: absolute; left: 550px; z-index:1; top: 35px">
+                          </div>
+                          <div class="col-7">
+                            <!-- parallax -음수값은 (y=위에서 아래로 보여주기),(x=왼쪽에서 오른쪽으로 보여주기) +양수값은 (y=아래에서 위로 보여주기), (x=오른쪽에서 왼쪽)으로  
+                      data-swiper-parallax-duration= 목표지점까지 얼마만에 이동을 완료할것인지(속도)-->
+                            <!-- data-swiper-parallax=패럴랙스의 이동양(px) -->
+
+                            <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="500" data-swiper-parallax-duration="1000">
+                              <img src="img/1.svg" style="width: 25%">
+                              <span class="text-333333 fs-4 ms-4">내가 원하는 모임정보 검색</span>
+                            </div>
+                            <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="500" data-swiper-parallax-duration="1500">
+                              <img src="img/2.svg" style="width: 35%">
+                              <span class="text-333333 fs-4 ms-4">원하는 날짜, 시간, 인원 예약</span>
+                            </div>
+                            <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="500" data-swiper-parallax-duration="2000">
+                              <img src="img/3.svg" style="width: 25%">
+                              <span class="text-333333 fs-4 ms-4">알차고 다양한 할인 혜택까지!</span>
+                            </div>
+                            <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="500" data-swiper-parallax-duration="2500">
+                              <img src="img/4.svg" style="width: 30%">
+                              <span class="text-333333 fs-4 ms-4">쇼핑 채널은 덤!<br>
+                                다양한 상품을 선물하세요</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide bg-lightyellow">
+        <div class="position-absolute w-100">
+          <img src="img/flower.svg" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+        </div>
+
+        <center>
+          <div class="h-100 row flex-center fs-1">
+            <div class="g_wrapper_2">
+              <!--그리드 시스템 래퍼(수직 3분할)-->
+              <div class="g_center_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div style="position: absolute; z-index: 2; left: 450px">
+                      </div>
+                      <img src="img/bg_circle1.svg" class="object-contain" style="width:35%; position: absolute; left: 295px; z-index:1; top: 110px; opacity: 0.6" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+                      <img src="img/bg_circle2.svg" class="object-contain" style="width:30%; position: absolute; left: 340px; z-index:1; top: 110px;" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="3000">
+                      <img src="img/bg_circle3.svg" class="object-contain" style="width:25%; position: absolute; left: 385px; z-index:1; top: 110px" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="4000">
+                      <!--                      <img src="img/phone.svg" class="object-contain test_phone" style="width:15%; position: absolute; left: 475px; z-index:99; top: 110px" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="1500">-->
+                      <img src="img/phone.svg" class="object-contain test_phone" style="width:15%; position: absolute; left: 485px; z-index:99; top: 110px">
+                      <!--이미지 태그:s-->
+                      <img src="img/img_tag_1.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 415px; top:430px; z-index:999;">
+                      <img src="img/img_tag_2.svg" class="img_tag_set img_tag_1 object-contain animate__delay-1s" style="height:5%; position: absolute; right: 230px; top:430px; z-index:999;">
+                      <img src="img/img_tag_3.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 465px; top:490px; z-index:999;">
+                      <img src="img/img_tag_4.svg" class="img_tag_set img_tag_1 object-contain animate__slow animate__delay-1s" style="height:5%; position: absolute; right: 325px; top:490px; z-index:999;">
+                      <img src="img/img_tag_5.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 175px; top:490px; z-index:999;">
+                      <img src="img/img_tag_6.svg" class="img_tag_set img_tag_1 object-contain animate__slow animate__delay-1s" style="height:5%; position: absolute; right: 425px; top:550px; z-index:999;">
+                      <img src="img/img_tag_7.svg" class="img_tag_set img_tag_1 object-contain animate__faster animate__delay-1s" style="height:5%; position: absolute; right: 255px; top:550px; z-index:999;">
+                      <img src="img/img_tag_8.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 450px; top:610px; z-index:999;">
+                      <img src="img/img_tag_9.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 300px; top:610px; z-index:999;">
+                      <img src="img/img_tag_10.svg" class="img_tag_set img_tag_1 object-contain animate__fast animate__delay-1s" style="height:5%; position: absolute; right: 160px; top:610px; z-index:999;">
+                      <img src="img/img_tag_11.svg" class="img_tag_set img_tag_1 object-contain animate__slow animate__delay-1s" style="height:5%; position: absolute; right: 385px; top:670px; z-index:999;">
+                      <img src="img/img_tag_12.svg" class="img_tag_set img_tag_1 object-contain animate__delay-1s" style="height:5%; position: absolute; right: 245px; top:670px; z-index:999;">
+                      <!--이미지 태그:e-->
+                      <img src="img/btn_search.svg" class="object-contain animate__fast" style="height:9%; position: absolute; right: 330px; top:750px; z-index:999;" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="3000">
+
+                    </div>
+                    <div class="col-6">
+                      <!-- parallax -음수값은 (y=위에서 아래로 보여주기),(x=왼쪽에서 오른쪽으로 보여주기) +양수값은 (y=아래에서 위로 보여주기), (x=오른쪽에서 왼쪽)으로  
+                      data-swiper-parallax-duration= 목표지점까지 얼마만에 이동을 완료할것인지(속도)-->
+                      <!-- data-swiper-parallax=패럴랙스의 이동양(px) -->
+
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center text-orange" data-swiper-parallax-x="-500" data-swiper-parallax-duration="1000">
+                        <span class="fs-40px ms-4">내가 원하는 모임의<br>
+                          정보를 검색해보세요</span>
+                      </div>
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="-500" data-swiper-parallax-duration="1500">
+                        <span class="text-333333 fs-20px ms-4">모임 주제에 맞는 장소를 검색해보세요~!<br>
+                          평점, 리뷰, 찜, 가격 등을 보고 방문할 장소를 선택하세요
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="swiper-slide bg-transparent">
+        <div class="position-absolute w-100 h-100">
+          <img src="img/bg_cloud.svg" data-swiper-parallax-opacity="0.4" data-swiper-parallax-duration="3000">
+        </div>
+        <div class="swiper myswiper8 bg-transparent" style="width: 1232px">
+          <div class="swiper-wrapper bg-transparent">
+            <div class="swiper-slide type-v d-inline bg-transparent">
+
+              <div class="container-fluid container-bloom">
+                <div class="row">
+                  <div class="col-6" style="padding-top: 300px;">
+
+                    <div class="title ssurround fs-40px d-flex align-items-center text-blue" data-swiper-parallax-y="-500" data-swiper-parallax-duration="1000">
+                      <div class="ms-auto text-end ">모임과 관련된<br>
+                        다양한 정보를 확인해보세요</div>
+                    </div>
+                    <div class="title ssurround fs-20px d-flex align-items-center text-333333" data-swiper-parallax-y="-500" data-swiper-parallax-duration="1000">
+                      <div class="ms-auto text-end ">지역별 핫한 여행지와 맛집을 소개해드립니다.</div>
+                    </div>
+                    <div class="title ssurround fs-2 mt-3 float-end d-flex align-items-center text-333333" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+                      <ul class="nav nav-pills float-end">
+                        <li class="nav-item me-30px">
+                          <a href="#">
+                            <img src="img/insta_blue.svg">
+                          </a>
+                        </li>
+                        <li class="nav-item me-30px">
+                          <a href="#">
+                            <img src="img/blog_blue.svg">
+                          </a>
+                        </li>
+                        <li class="nav-item ">
+                          <a href="#">
+                            <img src="img/facebook_blue.svg">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="3000">
+                    <!--임시 비활성화-->
+                    <div class="right_box">
+                      <ul class="clear active_up">
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                          <!--                        </li>-->
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_1.png" alt="">
+                          <!--                          <span>no1</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_2.png" alt="">
+                          <!--                          <span>no2</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_3.png" alt="">
+                          <!--                          <span>no3</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_4.png" alt="">
+                          <!--                          <span>no4</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_5.png" alt="">
+                          <!--                          <span>no5</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_6.png" alt="">
+                          <!--                          <span>no6</span>-->
+                        </li>
+                      </ul>
+                      <ul class="clear active_down">
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_7.png" alt="">
+                          <!--                          <span>no7</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_8.png" alt="">
+                          <!--                          <span>no8</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_9.png" alt="">
+                          <!--                          <span>no9</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_10.png" alt="">
+                          <!--                          <span>no10</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_11.png" alt="">
+                          <!--                          <span>no11</span>-->
+                        </li>
+                        <li>
+                          <img class="pc" src="img/img_banner_12.png" alt="">
+                          <!--                          <span>no12</span>-->
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--좌우 움직이는 스크롤
+              <div class="swiper myswiper9">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/sample_bg1.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/sample_bg2.jpg">
+                  </div>
+                </div>
+              </div>
+-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="swiper-slide bg-pink">
+
+        <div class="position-absolute w-100">
+          <img src="img/bg_pink.svg" class="test_phone object-contain animate__slow">
+        </div>
+        <center>
+          <div class="h-100 row flex-center fs-1">
+            <div class="g_wrapper_2">
+              <!--그리드 시스템 래퍼(수직 3분할)-->
+              <div class="g_center_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div style="position: absolute; z-index: 2; left: 450px">
+                      </div>
+
+                      <!--배경 핑크색 원 크기:s-->
+                      <img src="img/circle_pink1.svg" class="circle_set circle_1 object-contain animate__fast" style="width:10%; position: absolute; left: 101px; z-index:1; top: -310px;">
+
+                      <img src="img/circle_pink2.svg" class="circle_set circle_1 object-contain animate__slower" style="width:20%; position: absolute; left: 303px; z-index:1; top: -236px;">
+
+                      <img src="img/circle_pink3.svg" class="circle_set circle_1 object-contain animate__faster " style="width:20%; position: absolute; left: 527px; z-index:1; top: -124px;">
+                      <img src="img/circle_pink4.svg" class="circle_set circle_1 object-contain animate__fast" style="width:20%; position: absolute; left: 1296px; z-index:1; top: -263px;">
+                      <img src="img/circle_pink5.svg" class="circle_set circle_1 object-contain" style="width:20%; position: absolute; left: 1582px; z-index:1; top: -143px;">
+
+                      <img src="img/circle_pink6.svg" class="circle_set circle_1 object-contain animate__slower" style="width:20%; position: absolute; left: 558px; z-index:1; top: 233px;">
+                      <img src="img/circle_pink7.svg" class="circle_set circle_1 object-contain animate__slower" style="width:8%; position: absolute; left: 807px; z-index:1; top: 241px;">
+
+                      <!--배경 핑크색 원 크기:e-->
+
+                      <img src="img/phone2.svg" class="object-contain test_phone" style="width:15%; position: absolute; left: 475px; z-index:99; top: 10px">
+                      <!--이미지 태그:s-->
+                      <img src="img/normal_price.svg" class="phone_btn phone_btn_1 object-contain animate__fast" style="height:4%; position: absolute; right: 340px; top:620px; z-index:999;">
+                      <img src="img/myce_price.svg" class="img_tag_set img_tag_1 object-contain animate__delay-1s" style="height:5%; position: absolute; right: 340px; top:680px; z-index:999;">
+
+                      <!--이미지 태그:e-->
+
+                    </div>
+                    <div class="col-6">
+                      <!-- parallax -음수값은 (y=위에서 아래로 보여주기),(x=왼쪽에서 오른쪽으로 보여주기) +양수값은 (y=아래에서 위로 보여주기), (x=오른쪽에서 왼쪽)으로  
+                      data-swiper-parallax-duration= 목표지점까지 얼마만에 이동을 완료할것인지(속도)-->
+                      <!-- data-swiper-parallax=패럴랙스의 이동양(px) -->
+
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center text-orange" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+                        <span class="fs-40px ms-4 text-white">알차고 다양한
+                          할인 혜택까지!<br>
+                          예약 정보 확인 후 결제하세요!</span>
+
+                        <span class="key2">
+                        </span>
+                      </div>
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="-400" data-swiper-parallax-duration="2000">
+                        <span class="text-333333 fs-20px ms-4">결제 수단에 따른 다양한 할인 혜택까지 제공합니다.
+                        </span>
+                        <span class="key1">
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="swiper-slide bg-white">
+        <div class="position-absolute w-100">
+          <img src="img/bg_nft.svg" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+        </div>
+
+
+
+        <!--nft:s-->
+        <img src="img/nft_circle.svg" class="object-contain" style="width:25%; position: absolute; right: 720px; z-index:99; top:0px">
+        <img src="img/nft_bg_btn2.svg" class="object-contain" style="width:25%; position: absolute; right: 720px; z-index:-1; top:320px">
+
+        <div class="container-fluid">
+          <div class="text-333333 fs-40px nunito fw-black flash mb-1" style="position: absolute; top: 60px; left: 41.5%">Membership NFT</div>
+          <div class="text-333333 fs-20px fw-600 flash mb-3 test_phone animate__fast animate__delay-1s" style="position: absolute; top: 150px; left: 32.5%">Reward Token으로 구매 가능한 아바타NFT는 특별 멤버십을 갖게 됩니다.</div>
+          <div class="container-fluid px-0 container-bloom mx-auto">
+
+            <div class="row">
+              <div class="position-absolute" style="width:230px; right:845px; top: 350px">
+                <!--nft중앙 이미지::s-->
+                <div class="swiper mySwiper2-2 ">
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <img src="img/nft_lv1.svg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/nft_lv2.svg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/nft_hidden.svg">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/nft_lv0.svg">
+                    </div>
+                  </div>
+                  <!--
+                  <a class="btn bg-bloom text-white ssurround" style="width: 200px; font-size: 20px; margin-top: 50px" href="#">
+                    다운로드 받기
+                    <img src="img/right_btn.svg" class="moveright" style="width: 6%; display: inline">
+                  </a>
+-->
+                </div>
+                <!--nft중앙 이미지::e-->
+
+
+              </div>
+
+              <div class="position-absolute" style="width:430px; right:740px; top: 730px">
+                <!--nft중앙 이미지 하단제목::s-->
+                <div class="swiper mySwiper2-3">
+                  <div class="swiper-wrapper  ssurround">
+                    <div class="swiper-slide">
+                      <div class="btn bg-nftpink w-100 rounded-pill fs-24px text-white">
+                        구매 금액에 따라 오픈되는 아바타</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-nftpink w-100 rounded-pill fs-24px text-white">
+                        구매 금액에 따라 오픈되는 아바타
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-nftpink w-100 rounded-pill fs-24px text-white">
+                        히든 아바타
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-nftpink w-100 rounded-pill fs-24px text-white">
+                        기본 아바타</div>
+                    </div>
+                  </div>
+                </div>
+                <!--nft중앙 이미지 하단제목::e-->
+              </div>
+
+              <div class="position-absolute" style="width:450px; right:735px; top: 794px;">
+                <!--nft중앙 이미지 하단본문::s-->
+                <div class="swiper mySwiper2-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="btn bg-palepink w-100">
+                        적립형 뱃지 획득율 1% 상승</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-palepink w-100">
+                        투자형 뱃지 획득율 0.5% 상승
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-palepink w-100">
+                        적립형, 투자형, 할인형 뱃지 획득율 3% 상승
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="btn bg-palepink w-100">
+
+                        효과 없음</div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <!--nft중앙 이미지 하단본문::e-->
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: -180px">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <!--nft 캐로우셀 3개씩::s-->
+              <div class="swiper mySwiper2-1 mt-139px" style="margin-top: 180px !important">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="img/nft_lv0_shadow.svg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/nft_lv1_shadow.svg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/nft_lv2_shadow.svg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/nft_hidden_shadow.svg">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <!--nft 캐로우셀 3개씩::e-->
+            </div>
+            <div class="col-3"></div>
+
+          </div>
+          <!--nft:e-->
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="swiper-slide align-items-start">
+        <svg id="svg">
+
+        </svg>
+        <div class="position-absolute rotate_start" style="margin-top: 350px; width: 60%;">
+          <img src="img/big_circle.svg">
+        </div>
+        <!--        <div class="position-absolute d-block rotate-z" style="width: 1309px; height: 1309px;">asdfasdf</div>-->
+
+        <div class="container">
+          <div class="row ">
+            <div class="col-12 img_tag_set img_tag_1">
+              <p class="mt-139px ssurround text-orange fs-40px mb-0 ">선물하기와 쇼핑은 덤!</p>
+              <p class="text-333333 fs-20px mt-1">카페, 치킨, 외식 E 티켓 선물하기!<br>소형가전부터 대형가전까지 다양한 상품 제공</p>
+            </div>
+          </div>
+        </div>
+        <img src="img/scroll_3.svg" class="position-absolute top-100 start-50 translate-middle object-contain" style="width:30%; z-index: 1;">
+        <div class="fixed-bottom nunito fw-bold text-white" style="margin-bottom: 25px">
+          Scroll
+          <div class="fixed-bottom moveup">
+            <img src="img/down_btn_white.svg" class="mx-auto" style="width:1%">
+          </div>
+        </div>
+        <img src="img/gift_lg.svg" class="clock_test object-contain" style="width:8%; position: absolute; right: 1245px; top:20px; z-index:999;">
+        <img src="img/gift_goobne.svg" class="clock_test object-contain" style="width:7%; position: absolute; right: 1071px; top:120px; z-index:999;">
+        <img src="img/gift_dyson.svg" class="clock_test object-contain" style="width:10%; position: absolute; right: 825px; top:10px; z-index:999;">
+        <img src="img/gift_seol.svg" class="clock_test object-contain" style="width:8%; position: absolute; right: 563px; top:20px; z-index:999;">
+        <img src="img/gift_tore.svg" class="clock_test object-contain" style="width:6%; position: absolute; right: 1410px; top:190px; z-index:999;">
+        <img src="img/gift_tous.svg" class="clock_test object-contain" style="width:7%; position: absolute; right: 1251px; top:293px; z-index:999;">
+        <img src="img/gift_kiturami.svg" class="clock_test object-contain" style="width:6%; position: absolute; right: 1030px; top:340px; z-index:999;">
+        <img src="img/gift_lotte.svg" class="clock_test object-contain" style="width:7%; position: absolute; right: 730px; top:236px; z-index:999;">
+        <img src="img/gift_meal.svg" class="clock_test object-contain" style="width:6%; position: absolute; right: 540px; top:355px; z-index:999;">
+        <img src="img/gift_carrier.svg" class="clock_test object-contain" style="width:7%; position: absolute; right: 410px; top:170px; z-index:999;">
+      </div>
+
+
+      <div class="swiper-slide main_bg2">
+
+
+
+
+        <center>
+          <div class="h-100 row flex-center fs-1">
+            <div class="g_wrapper_2">
+              <!--그리드 시스템 래퍼(수직 3분할)-->
+              <div class="g_center_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div style="position: absolute; z-index: 2; left: 460px; top: 250px">
+                        <video class="float-end" muted="" playsinline="" loop="" autoplay="" width="215px">
+                          <source src="video/bloom.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                      <img src="img/awfd.svg" class="object-contain" style="width:16%; position: absolute; left: 415px; z-index:1; top: 35px">
+                    </div>
+                    <div class="col-6">
+                      <!-- parallax -음수값은 (y=위에서 아래로 보여주기),(x=왼쪽에서 오른쪽으로 보여주기) +양수값은 (y=아래에서 위로 보여주기), (x=오른쪽에서 왼쪽)으로  
+                      data-swiper-parallax-duration= 목표지점까지 얼마만에 이동을 완료할것인지(속도)-->
+                      <!-- data-swiper-parallax=패럴랙스의 이동양(px) -->
+
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center text-orange" data-swiper-parallax-scale="0.1" data-swiper-parallax-duration="2000">
+                        <span class="fs-54px text-white">지금 바로 부름앱을<br>
+                          사용해보세요~!</span>
+
+                        <span class="key2">
+                        </span>
+                      </div>
+                      <div class="title ssurround fs-54px text-start d-flex align-items-center mt-4" data-swiper-parallax-x="-400" data-swiper-parallax-duration="2000">
+                        <a href="bloom.apk">
+                          <!--                       <a onclick="window.open('https://play.google.com/store/apps/details?id=com.kdax.mohaeng&amp;hl=ko')" class="cursor-pointer">-->
+                          <img src="img/download.svg" style="width: 93%">
+                        </a>
+                        <a onclick="window.open('https://apps.apple.com/us/app/sutiawbapp/id1572788318?ls=1')" class="cursor-pointer">
+                          <img src="img/appstore.svg" style="width: 93%"></a>
+
+                        <!--줄 긋는 키프레임
+                        <span class="key1">
+                        </span>
+-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+
+
+
+
+
+
+      </div>
+
+      <!--
+      <div class="swiper-slide bg-danger">
+        <div class="swiper mySwiper10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-info">
+            <p>
+            asdf
+          </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+-->
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+
+    <!-- If we need scrollbar
+    <div class="swiper-scrollbar"></div> -->
+
+    <!--main::e-->
+
+    <!--thumbnail::s-->
+    <div thumbsslider="" class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cursor-pointer">
+          썸네일1
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일2
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일3
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일4
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일5
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일6
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          썸네일7
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--thumbnail::e-->
+
+  <!--위로가기::s--
+    <a href="#" id="c-go-top" class="c-go-top animation-move">
+      <i class="bi bi-arrow-up"></i>
+      TOP
+    </a>
+<!--위로가기::e-->
+
+  <!--Swiper.JS::S-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/swiper_set.js"></script>
+  <!--Swiper.JS::E-->
+
+  <!--JQUERY::S-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <!--JQUERY::E-->
+ 
+  <!--JS::S--
+  <script src="js/gototop.js"></script>
+  <!--JS::E-->
+
+<!--BOOTSTRAP.JS:S-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP.JS:E-->
+
+  <!--AOS.JS::S-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--AOS.JS::E-->
+
+  <!--WOW.JS::S-->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!--WOW.JS::E-->
+
+  <!--common.js::s-->
+  <script type="text/javascript" src="js/common.js"></script>
+  <!--common.js::s-->
+
+  <!--common2.js::s-->
+  <script type="text/javascript" src="js/common2.js"></script>
+  <!--common2.js::s-->
+
+  <!--gsap.js::s-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js">
+  </script>
+  <!--gsap.js::e-->
+
+  <!--randomcolor.js::s-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+  <script>
+    eval(function(p, a, c, k, e, d) {
+      e = function(c) {
+        return (c < a ? "" : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+      };
+      if (!''.replace(/^/, String)) {
+        while (c--) d[e(c)] = k[c] || e(c);
+        k = [function(e) {
+          return d[e]
+        }];
+        e = function() {
+          return '\\w+'
+        };
+        c = 1;
+      };
+      while (c--)
+        if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+      return p;
+    }('7 l=0,j=0,16=0,17=0;7 f=p.19(\'f\');15();Q(7 i=0;i<1h;i++){L(8.18(4+9(12)),9(l),9(j),10+9(6))};O();c O(){7 Y=5+9(2);1i(c(){L(8.18(4+9(12)),9(l),9(j),10+9(6));O()},Y*10)}c L(o,x,y,s){7 V=0.5+9(0.5);7 q=p.w(\'v://B.F.E/D/f\',\'g\');q.d(e,\'1c\',\'1b(\'+x+\', \'+y+\')\');q.d(e,\'C\',\'V:;\');7 N=1+9(4);7 m=p.w(\'v://B.F.E/D/f\',\'g\');7 b=p.w(\'v://B.F.E/D/f\',\'b\');7 u=1a({1d:\'1e\'});b.d(e,\'h\',T(o,0,0,s,0));b.d(e,\'C\',\'u:\'+u+\';\');m.G(b);7 z=2*8.k/o;Q(7 i=0;i<o;i++){7 a=(i+0.5)*z;7 M=8.H(8.k/ o) * s /8.H(8.k/3);7 K=8.A(8.k/ o) * s + 8.A(8.k /3)*M;7 W=8.A(a)*K;7 Z=8.H(a)*K;b=p.w(\'v://B.F.E/D/f\',\'b\');b.d(e,\'h\',T(3,W,Z,M,a));b.d(e,\'C\',\'u:\'+u+\';\');m.G(b)}m.d(e,\'1k\',\'1m\');m.d(e,\'C\',\'1f-N:\'+N+\'s;\');q.G(m);f.G(q);}c 15(){7 r=f.1g();l=r.l;j=r.j;16=l/2;17=j/2}c 14(n,x,y,s,r){7 z=2*8.k/n;7 h=[],t=P 0,R=P 0,U=P 0;Q(7 i=0;i<n;i++){t=r+i*z;R=x+8.A(t)*s;U=y+8.H(t)*s;h.1l([R,U])}I h}c T(n,x,y,s,r){h=14(n,x,y,s,r);I h.1j(c(11,S,i,a){I 11+\' \'+S[0]+\',\'+S[1]})}c 9(J,X){I X?8.13()*2*J-J:8.13()*J}', 62, 85, '|||||||var|Math|rnd||polygon|function|setAttributeNS|null|svg||points||height|PI|width|innerGroup||nbVertexes|document|group||||fill|http|createElementNS|||dt|cos|www|style|2000|org|w3|appendChild|sin|return|max|r2|createFlower|r1|duration|rndFlower|void|for|px|point|polygonPoints|py|opacity|tx|negative|time|ty||acc||random|ppoints|onResize|cx|cy|floor|getElementById|randomColor|translate|transform|format|rgb|animation|getBoundingClientRect|20|setTimeout|reduce|class|push|flower'.split('|'), 0, {}))
+  </script>
+  <!--randomcolor.js::e-->
+<script>
+    $(window).on('load', function() {
+      $(".modal_btn").trigger('click');
+    });
+  </script>
+</body>
+
+</html>

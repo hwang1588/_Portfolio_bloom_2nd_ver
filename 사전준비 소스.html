@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <!--  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">-->
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#000008">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="Myce.io">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://myce.io">
+  <meta property="og:image" content="img/img_og.jpg">
+  <meta name="description" content="Myce.io">
+  <meta name="og:description" content="Myce.io">
+  <meta name="keyword" content="Myce.io">
+  <meta name="og:keyword" content="Myce.io">
+  <title>공사중::메인</title>
+
+  <script>
+    function isMobile() {
+      var UserAgent = navigator.userAgent;
+      if (UserAgent.match(
+          /iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+        ) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    if (isMobile()) {
+      location.href = "/index_m.html"; //모바일페이지
+    } else {}
+  </script>
+  <!--css::S-->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--css::E-->
+
+</head>
+<div id="loading-wrapper2">
+  <img src="img/sample_bg1.jpg" alt="loading">
+  <div class="bloom center text-dark wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">test test test</div>
+  <div class="bloom center text-dark drama"></div>
+</div>
+
+<body class="">
+  <div class="circle"></div>
+  <!--header_ori::s--
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-4">Simple header</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
+  <!--header_ori::e-->
+
+  <!--header_side::s--
+       <div class="container d-flex flex-center"  style="position: absolute;
+    width: 30%;
+    z-index: 9;
+    height: 100%;
+    left: 0;
+    background-color: #198754">
+    <header class="d-flex flex-wrap flex-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4">Simple header</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
+  <!--header_side::e-->
+
+  <!--header_투명헤더::s-->
+  <div class="container-fluid" style="position: absolute;
+z-index:9;
+    background-color: #transaprent; margin-top: -16px">
+    <header class="d-flex flex-wrap flex-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none pt-5 ">
+        <span class="fs-4">Simple header</span>
+      </a>
+      <ul class="nav nav-pills ">
+        <li class="nav-item pt-5"><a href="#" class="nav-link text-white" aria-current="page">Home</a></li>
+        <li class="nav-item pt-5"><a href="#" class="nav-link text-white">Features</a></li>
+        <li class="nav-item pt-5"><a href="#" class="nav-link text-white">Pricing</a></li>
+        <li class="nav-item pt-5"><a href="#" class="nav-link text-white">FAQs</a></li>
+        <li class="nav-item pt-5 bg-dark"><a href="#" class="nav-link text-white pb-#">About</a></li>
+      </ul>
+    </header>
+  </div>
+  <!--header_투명헤더::e-->
+
+
+  <!--main::s-->
+  <div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide bg-success">
+        <!--main>sub::s-->
+        <div class="swiper mySwiper3">
+
+          <!--스크롤 아이콘:s-->
+          <div class="fixed-bottom moveup">
+            <i class="bi bi-chevron-double-up fs-2 fw-bold"></i>
+          </div>
+          <!--스크롤 아이콘:e-->
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white" data-swiper-autoplay="2500" style="height: 100% !important;">
+              <img src="img/sample_bg1.jpg">
+            </div>
+            <div class="swiper-slide bg-white" data-swiper-autoplay="2500">
+              <img src="img/sample_bg4.jpg">
+            </div>
+            <div class="swiper-slide bg-white" data-swiper-autoplay="2500">
+              <div class="test2">
+                <p class="h-100 row flex-center fs-1" data-swiper-parallax-opacity="0.1" data-swiper-parallax-duration="3000">Lorem ipsum dolor sit amet, ...</p>
+              </div>
+              <!--반복 여부 제어할것-->
+            </div>
+          </div>
+          <!--main>sub::e-->
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-color: #04f404 !important">
+        <!--main>sub::s-->
+        <div class="swiper mySwiper5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white" data-swiper-autoplay="2500" style="height: 100% !important;">
+              <img src="img/sample_bg6.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide bg-warning">
+        <center>
+          <div class="h-100 row flex-center fs-1" style="height: 1080px !important">
+            <div class="g_wrapper_2">
+              <!--그리드 시스템 래퍼(수직 3분할)-->
+              <div class="g_center_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <!-- parallax -음수값은 (y=위에서 아래로 보여주기),(x=왼쪽에서 오른쪽으로 보여주기) +양수값은 (y=아래에서 위로 보여주기), (x=오른쪽에서 왼쪽)으로  
+                      data-swiper-parallax-duration= 목표지점까지 얼마만에 이동을 완료할것인지(속도)-->
+                      <!-- data-swiper-parallax=패럴랙스의 이동양(px) -->
+                      <div class="title" data-swiper-parallax-x="400">Slide 1</div>
+                      <div class="subtitle" data-swiper-parallax-y="-200">Subtitle</div>
+                      <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1600">
+                        <p>Lorem ipsum dolor sit amet, ...</p>
+                      </div>
+                      <!-- -opacity= fadein, fadeout 효과 -->
+                      <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+                      <!-- -scale= 스케일이 작아지고 커지는 효과 -->
+                      <div data-swiper-parallax-scale="0.1">I will change scale</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="swiper-slide bg-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <img src="img/phone_border.png" style="height: 100%; width: 23%; position: absolute; z-index: 1; top: 0px; left: 120px">
+              <!--main>sub::s-->
+              <div class="swiper mySwiper4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-info" data-swiper-autoplay="1000">
+                    <img src="img/sample_bg1.jpg" class="phoneimg">
+                  </div>
+                  <div class="swiper-slide bg-white" data-swiper-autoplay="2000">
+                    <img src="img/sample_bg2.jpg" class="phoneimg">
+                  </div>
+                  <div class="swiper-slide bg-primary" data-swiper-autoplay="2000">
+                    <img src="img/sample_bg3.jpg" class="phoneimg">
+                  </div>
+                </div>
+                <!--main>sub::e-->
+              </div>
+            </div>
+            <div class="col text-white">asdfasdfsadfasdfasdfsadfsadf</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide bg-warning">
+        <center>
+          <div class="video-holder">
+            <video muted="" playsinline="" loop="" autoplay="" width="100%">
+              <source src="video/yanolja.mp4" type="video/mp4" />
+            </video>
+            <div class="bloom">test test test test test</div>
+          </div>
+        </center>
+      </div>
+
+      <div class="swiper-slide bg-danger">
+        <center>
+          <div class="h-100 row flex-center fs-1" style="height: 1080px !important">
+            <div class="g_wrapper">
+              <div class="g_1x_1y_area">g_1x_1y_area</div>
+              <div class="g_1x_2y_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">g_1x_2y_area
+                      <!--이미지를 사전에 로드하지않고 보이는 순간 로드하기 시작
+                      <img data-src="img/news-7.jpg" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="g_1x_3y_area">g_1x_3y_area</div>
+              <div class="g_2x_1y_area">g_2x_1y_area</div>
+              <div class="g_2x_2y_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">g_2x_2y_area</div>
+                  </div>
+                </div>
+              </div>
+              <div class="g_2x_3y_area">g_2x_3y_area</div>
+              <div class="g_3x_1y_area">g_3x_1y_area</div>
+              <div class="g_3x_2y_area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">g_3x_2y_area</div>
+                  </div>
+                </div>
+              </div>
+              <div class="g_3x_3y_area">g_3x_3y_area</div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="swiper-slide bg-warning">
+        <div class="swiper mySwiper6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white">
+
+            <div class="col-2">Scroll Container</div>
+          <div class="col-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.
+          </div>
+
+          
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar
+    <div class="swiper-scrollbar"></div> -->
+
+  </div>
+  <!--main::e-->
+
+  <!--thumbnail::s-->
+  <div thumbsslider="" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide cursor-pointer">
+        썸네일1
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일2
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일3
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일4
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일5
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일6
+      </div>
+      <div class="swiper-slide cursor-pointer">
+        썸네일7
+      </div>
+    </div>
+  </div>
+  <!--thumbnail::e-->
+
+  <!--위로가기::s--
+    <a href="#" id="c-go-top" class="c-go-top animation-move">
+      <i class="bi bi-arrow-up"></i>
+      TOP
+    </a>
+<!--위로가기::e-->
+
+  <!--Swiper.JS::S-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/swiper_set.js"></script>
+  <!--Swiper.JS::E-->
+
+  <!--JQUERY::S-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <!--JQUERY::E-->
+
+  <!--JS::S--
+  <script src="js/gototop.js"></script>
+  <!--JS::E-->
+
+  <!--BOOTSTRAP.JS::S-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!--BOOTSTRAP.JS::E-->
+
+  <!--AOS.JS::S-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--AOS.JS::E-->
+
+  <!--WOW.JS::S-->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!--WOW.JS::E-->
+
+  <!--common.js::s-->
+  <script type="text/javascript" src="js/common.js"></script>
+  <!--common.js::s-->
+
+  <!--common2.js::s-->
+  <script type="text/javascript" src="js/common2.js"></script>
+  <!--common2.js::s-->
+
+  <!--gsap.js::s-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js">
+  </script>
+  <!--gsap.js::e-->
+
+  <!--locomotive.js::s-->
+
+  <!--locomotive.js::e-->
+
+</body>
+
+</html>
